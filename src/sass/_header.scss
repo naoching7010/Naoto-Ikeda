@@ -1,0 +1,47 @@
+#header {
+    color: #ffffff;
+    background: #22357e;
+    padding: #{map-get($spaces, 'l')};
+}
+
+.header {
+    &-title {
+        font-size: #{map-get($font-size, 'xl')};
+        font-weight: bold;
+        line-height: 1.0;
+    }
+    &-sub-title {
+        font-size: #{map-get($font-size, 'm')};
+        font-weight: normal;
+    }
+}
+
+.nav {
+    &-item {
+        padding: 0 #{map-get($spaces, 'l')};
+        &:last-child {
+            padding-left: 0;
+        }
+    }
+    &-link {
+        color: #ffffff;
+        padding: #{map-get($spaces, 's')};
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #7d2b2b;
+            transition: all .5s;
+
+        }
+        &:hover::after {
+            width: 100%;
+            transition: all .5s;
+        }
+    }
+}

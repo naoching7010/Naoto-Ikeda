@@ -1,0 +1,124 @@
+// フォントサイズ
+$font-size_xs: 8px;
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 22px;
+$font-size_xxl: 30px;
+$font-size_3l: 36px;
+$font-size_4l: 48px;
+
+$font-size: (
+    'xs': 8px,
+    's': 12px,
+    'm': 14px,
+    'default': 16px,
+    'l': 18px,
+    'xl':22px,
+    'xxl': 30px,
+    '3l': 36px,
+    '4l': 48px,
+    '5l': 60px,
+);
+
+// ボーダーサイズ
+$border-size: (
+    's': 1px,
+    'm': 2px,
+    'l': 3px,
+    'xl': 4px,
+    'xxl': 5px,
+    '3l': 6px,
+    '4l': 7px,
+    '5l': 8px,
+    '6l': 9px,
+    '7l': 10px,
+);
+
+// 余白サイズ
+$spaces: (
+    '0': 0,
+    's': 5px, 
+    'm': 10px,
+    'l': 15px,
+    'xl': 20px,
+    'xxl': 25px,
+    '3l': 30px,
+    '4l': 40px,
+    '5l': 50px,
+    '6l': 60px,
+    '7l': 70px,
+    '8l': 80px,
+    '9l': 90px,
+    '10l': 100px,
+)!default;
+
+// フォントファミリー
+$font-family_default: 'Noto Sans JP', sans-serif;
+$font-family_gothic: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+
+// ブレイクポイント
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'tab': 'screen and (min-width: 415px) and (max-width: 991px)',
+  'pc': 'screen and (min-width: 992px)',
+ ) !default;
+
+// =================================
+// mixin
+// =================================
+@mixin sm($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin tab($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin pc($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #787878;
+    font-size: $font-size_default;
+    padding: 0;
+    margin: 0;
+    font-family: $font-family_default;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+a {
+    // color: $font-color_default;
+    text-decoration: none;
+  }
+
+  a, button, input[type=submit] {
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  
+  input:focus, textarea:focus, button:focus, select:focus {
+    outline: none;
+  }
+
+.site-width {
+    margin-left: auto;
+    margin-right: auto;
+    @include pc() {
+        width: 1080px;
+    }
+}
