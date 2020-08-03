@@ -7494,8 +7494,13 @@ input:focus, textarea:focus, button:focus, select:focus {
   text-shadow: 3px 3px 0 #555555; }
   @media screen and (max-width: 414px) {
     .top-text {
-      font-size: 48px;
+      font-size: 36px;
       line-height: 0.7; } }
+  .top-text span {
+    font-size: 22px; }
+    @media screen and (max-width: 414px) {
+      .top-text span {
+        font-size: 18px; } }
 
 .section {
   padding-top: 100px;

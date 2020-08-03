@@ -94,7 +94,7 @@ EOT;
                         <h2 class="top-title">Welcome to my page!</h2>
                         <p class="top-text">
                             Naoto Ikeda<br>
-                            <span class="fontsize-xl">Student & Web Engineer<span>
+                            <span>Student & Web Engineer<span>
                         </p>
                         <a class="btn btn-contact js-nav-scroll" href="#contact">
                             お問い合わせはコチラ

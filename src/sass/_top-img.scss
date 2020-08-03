@@ -43,8 +43,15 @@
         font-family: 'Kalam', cursive;
         text-shadow:3px 3px 0 #555555;
         @include sm() {
-            font-size: #{map-get($font-size, '4l')};
+            font-size: #{map-get($font-size, '3l')};
             line-height: 0.7;
         }
+        span {
+            font-size: #{map-get($font-size, 'xl')};
+            @include sm() {
+                font-size: #{map-get($font-size, 'l')};
+            }
+        }
+
     }
 }
