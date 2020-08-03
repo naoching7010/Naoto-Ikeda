@@ -43,24 +43,27 @@
         }
     }
     &-submit {
-        color: #fff;
+        color: #ffffff;
         background: #ec6b9c;
         border: 2px solid #ec6b9c;
         font-weight: bold;
         @include pc() {
             color: #ec6b9c;
-            background: #fff;
+            background: #ffffff;
+        }
+        &:hover {
+            color: #ffffff;
         }
     }
     &-twitter {
-        color: #fff;
+        color: #ffffff;
         background: #00acee;
         font-size: #{map-get($font-size, 'xl')};
         border-radius: 10px;
         width: 50px;
         height: 50px;
         &:hover {
-            color: #fff;
+            color: #ffffff;
             opacity: 0.8;
         }
     }
@@ -74,6 +77,9 @@
             color: #787878;
             background: #ffffff;
             border: 2px solid #787878;
+        }
+        &:hover {
+            color: #ffffff;
         }
         &::before {
             content: "";
@@ -102,7 +108,6 @@
             position: relative;
             overflow: hidden;
             &:hover {
-                color: #fff;
                 border: 2px solid #ec6b9c;
             }
             &::after {

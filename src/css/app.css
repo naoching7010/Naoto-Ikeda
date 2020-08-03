@@ -8400,23 +8400,25 @@ input:focus, textarea:focus, button:focus, select:focus {
       -o-transform: rotate(45deg);
       -ms-transform: rotate(45deg); }
   .btn-submit {
-    color: #fff;
+    color: #ffffff;
     background: #ec6b9c;
     border: 2px solid #ec6b9c;
     font-weight: bold; }
     @media screen and (min-width: 1080px) {
       .btn-submit {
         color: #ec6b9c;
-        background: #fff; } }
+        background: #ffffff; } }
+    .btn-submit:hover {
+      color: #ffffff; }
   .btn-twitter {
-    color: #fff;
+    color: #ffffff;
     background: #00acee;
     font-size: 22px;
     border-radius: 10px;
     width: 50px;
     height: 50px; }
     .btn-twitter:hover {
-      color: #fff;
+      color: #ffffff;
       opacity: 0.8; }
   .btn-more {
     color: #ffffff;
@@ -8429,6 +8431,8 @@ input:focus, textarea:focus, button:focus, select:focus {
         color: #787878;
         background: #ffffff;
         border: 2px solid #787878; } }
+    .btn-more:hover {
+      color: #ffffff; }
     .btn-more::before {
       content: "";
       position: absolute;
@@ -8453,7 +8457,6 @@ input:focus, textarea:focus, button:focus, select:focus {
       position: relative;
       overflow: hidden; }
       .btn-slidein:hover {
-        color: #fff;
         border: 2px solid #ec6b9c; }
       .btn-slidein::after {
         position: absolute;
