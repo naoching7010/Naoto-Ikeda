@@ -22,26 +22,58 @@
         validRequired($content, 'content');
 
         if(empty($err_msg)) {
+
+            $date = new DateTime('now');
+
             mb_language("Japanese");
             mb_internal_encoding("UTF-8");
             $result = array();
 
             $client = array();
             $client['to'] = $email;
-            $client['from'] = 'test@gmail.com';
-            $client['subject'] = 'お問い合わせを受け付けました';
+            $client['subject'] = 'お問い合わせを受け付けしました';
             $client['content'] = <<<EOT
-お問い合わせを受け付けました。
+※本メールはシステムからの自動返信です。本メールに返信されてもご対応致しかねます。
+
+{$name}様
+
+お世話になっております。
+お問い合わせありがとうございました。
+
+以下の内容でお問い合わせを受け付けいたしました。
+3営業日以内に、担当者 池田 よりご連絡いたしますので
+今しばらくお待ちくださいませ。
+
+━━━━━━□■□　お問い合わせ内容　□■□━━━━━━
+お名前：{$name}
+E-Mail：{$email}
+お問い合わせ内容：{$content}
+
+お問い合わせ日時：{$date->format('Y年m月d日')}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+———————————————————————
+【担当情報】
+担当：池田 直人
+メール：ikeda.naoto.98@gmail.com
+———————————————————————
 EOT;
             $result['client'] = mb_send_mail($client['to'], $client['subject'], $client['content']);
 
 
             $host = array();
             $host['to'] = $email;
-            // $host['from'] = 'ike@gmail.com';
-            $host['subject'] = 'お問い合わせを受け付けました';
+            $host['subject'] = 'お問い合わせを受け付けしました';
             $host['content'] = <<<EOT
-お問い合わせを受け付けました。
+お問い合わせを受け付けしました。
+
+━━━━━━□■□　お問い合わせ内容　□■□━━━━━━
+お名前：{$name}
+E-Mail：{$email}
+お問い合わせ内容：{$content}
+
+お問い合わせ日時：{$date->format('Y年m月d日')}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EOT;
             $result['host'] = mb_send_mail($host['to'], $host['subject'], $host['content']);
             if($result['client'] && $result['host']) {
