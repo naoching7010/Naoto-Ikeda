@@ -465,13 +465,13 @@ $circle_size_md: 160px;
         height: 100%;
         background: #ffffff;
         padding: #{map-get($spaces, '5l')}  #{map-get($spaces, 'xl')};
-        &:hover .service-title, &:active .service-icn {
+        &:hover .services-icn, &:active .services-icn {
             color: #fff;
             background: #22357e;
             transition: all .5s;
             animation: jump 0.9s linear 0s 1;
         }
-        &:hover .service-title, &:active .service-title {
+        &:hover .services-title, &:active .services-title {
             color: #22357e;
         }
     }

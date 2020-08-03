@@ -8011,12 +8011,12 @@ input:focus, textarea:focus, button:focus, select:focus {
   height: 100%;
   background: #ffffff;
   padding: 50px 20px; }
-  .services-item:hover .service-title, .services-item:active .service-icn {
+  .services-item:hover .services-icn, .services-item:active .services-icn {
     color: #fff;
     background: #22357e;
     transition: all .5s;
     animation: jump 0.9s linear 0s 1; }
-  .services-item:hover .service-title, .services-item:active .service-title {
+  .services-item:hover .services-title, .services-item:active .services-title {
     color: #22357e; }
 
 @keyframes jump {
