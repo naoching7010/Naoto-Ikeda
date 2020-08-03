@@ -1,0 +1,50 @@
+#top-img {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url('../../image/top.jpg');
+    background-size: cover;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.top {
+    &-container {
+        height: 100%;
+    }
+    &-inner {
+        height: 100%;
+        position: relative;
+    }
+    &-content {
+        position: relative;
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        margin: auto;
+        color: #ffffff;
+        text-align: right;
+        @include sm() {
+            text-align: center;
+        }
+    }
+    &-title {
+        font-size: #{map-get($font-size, '5l')};
+        margin-bottom: #{map-get($spaces, '3l')};
+        font-family: 'Kalam', cursive;
+        text-shadow:3px 4px 0 #555555;
+    }
+    &-text {
+        font-size: #{map-get($font-size, '4l')};
+        line-height: 0.6;
+        margin-bottom: #{map-get($spaces, 'xxl')};
+        font-family: 'Kalam', cursive;
+        text-shadow:3px 3px 0 #555555;
+        @include sm() {
+            font-size: #{map-get($font-size, '4l')};
+            line-height: 0.7;
+        }
+    }
+}

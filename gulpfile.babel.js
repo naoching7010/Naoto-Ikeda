@@ -36,10 +36,11 @@ gulp.task('minifycss', function(){
 
 gulp.task('browser-sync', function(){
     browserSync.init({
-        server: {
-            baseDir: './',
-            index: 'index.html'
-        }
+        proxy: "localhost:8888/Naoto-Ikeda/",
+        // server: { 
+        //     baseDir: './',
+        //     index: 'index.php'
+        // }
     });
 });
 

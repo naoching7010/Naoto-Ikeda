@@ -1,4 +1,9 @@
 #header {
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 3;
+    width: 100%;
     color: #ffffff;
     background: #22357e;
     padding: #{map-get($spaces, 'l')};
@@ -17,16 +22,72 @@
 }
 
 .nav {
+    @include sm() {
+        height: 100vh;
+        width: 80vw;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        -moz-transform: translateX(80vw);
+        -webkit-transform: translateX(80vw);
+        -o-transform: translateX(80vw);
+        -ms-transform: translateX(80vw);
+        padding: #{map-get($spaces, '8l')} 0;
+        transition: all .5s;
+        &.active {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transition: all .5s;
+        }
+    } 
+    &-menu {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flexbox;
+        display: -moz-flexbox;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        @include sm() {
+            display: block;
+            width: 100%;
+        }
+    }
     &-item {
         padding: 0 #{map-get($spaces, 'l')};
         &:last-child {
             padding-left: 0;
+        }
+        @include sm() {
+            color: #787878;
+            width: 100%;
+            border-top: 1px solid #eeeeee;
+            padding: 0;
         }
     }
     &-link {
         color: #ffffff;
         padding: #{map-get($spaces, 's')};
         position: relative;
+        @include sm() {
+            padding: #{map-get($spaces, 'xxl')} 0;
+            color: #787878;
+            font-size: #{map-get($font-size, 'l')};
+            text-align: center;
+            &:hover {
+                background: #22357e;
+                & .nav-link {
+                    color: #ffffff;
+                }
+            }
+            &.active {
+                font-weight: bold;
+            }
+        }
         &::after {
             content: "";
             display: inline-block;
@@ -37,11 +98,158 @@
             height: 2px;
             background: #7d2b2b;
             transition: all .5s;
+            @include sm() {
+                display: none;
+            }
 
         }
         &:hover::after {
             width: 100%;
             transition: all .5s;
+        }
+    }
+}
+
+.menu-trigger {
+    display: none;
+    @include sm() {
+        display: inline-block;
+    }
+    transition: all .4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    z-index: 1;
+    span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        &:nth-of-type(1) {
+            top: 0;
+            -webkit-animation: menu-bar01 .75s forwards;
+            animation: menu-bar01 .75s forwards;
+        }
+        &:nth-of-type(2) {
+            top: 13px;
+            transition: all .25s .25s;
+            opacity: 1;
+        }
+        &:nth-of-type(3) {
+            bottom: 0;
+            -webkit-animation: menu-bar02 .75s forwards;
+            animation: menu-bar02 .75s forwards;
+        }
+    }
+    &.active {
+        span {
+            background: #787878;
+            &:nth-of-type(1) {
+                -webkit-animation: active-menu-bar01 .75s forwards;
+                animation: active-menu-bar01 .75s forwards;
+            }
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+            &:nth-of-type(3) {
+                -webkit-animation: active-menu-bar03 .75s forwards;
+                animation: active-menu-bar03 .75s forwards;
+            }
+        }
+    }
+    @-webkit-keyframes menu-bar01 {
+        0% {
+          -webkit-transform: translateY(13px) rotate(45deg);
+        }
+        50% {
+          -webkit-transform: translateY(13px) rotate(0);
+        }
+        100% {
+          -webkit-transform: translateY(0) rotate(0);
+        }
+      }
+      @keyframes menu-bar01 {
+        0% {
+          transform: translateY(13px) rotate(45deg);
+        }
+        50% {
+          transform: translateY(13px) rotate(0);
+        }
+        100% {
+          transform: translateY(0) rotate(0);
+        }
+      }
+      @-webkit-keyframes menu-bar02 {
+        0% {
+          -webkit-transform: translateY(-15px) rotate(-45deg);
+        }
+        50% {
+          -webkit-transform: translateY(-15px) rotate(0);
+        }
+        100% {
+          -webkit-transform: translateY(0) rotate(0);
+        }
+      }
+      @keyframes menu-bar02 {
+        0% {
+          transform: translateY(-15px) rotate(-45deg);
+        }
+        50% {
+          transform: translateY(-15px) rotate(0);
+        }
+        100% {
+          transform: translateY(0) rotate(0);
+        }
+      }
+
+      @-webkit-keyframes active-menu-bar01 {
+        0% {
+          -webkit-transform: translateY(0) rotate(0);
+        }
+        50% {
+          -webkit-transform: translateY(13px) rotate(0);
+        }
+        100% {
+          -webkit-transform: translateY(13px) rotate(45deg);
+        }
+      }
+      @keyframes active-menu-bar01 {
+        0% {
+          transform: translateY(0) rotate(0);
+        }
+        50% {
+          transform: translateY(13px) rotate(0);
+        }
+        100% {
+          transform: translateY(13px) rotate(45deg);
+        }
+      }
+      @-webkit-keyframes active-menu-bar03 {
+        0% {
+          -webkit-transform: translateY(0) rotate(0);
+        }
+        50% {
+          -webkit-transform: translateY(-15px) rotate(0);
+        }
+        100% {
+          -webkit-transform: translateY(-15px) rotate(-45deg);
+        }
+      }
+      @keyframes active-menu-bar03 {
+        0% {
+          transform: translateY(0) rotate(0);
+        }
+        50% {
+          transform: translateY(-15px) rotate(0);
+        }
+        100% {
+          transform: translateY(-15px) rotate(-45deg);
         }
     }
 }

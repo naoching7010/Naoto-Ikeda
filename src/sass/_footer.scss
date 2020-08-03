@@ -1,0 +1,7 @@
+#footer {
+    color: #ffffff;
+    background: #22357e;
+    padding-top: #{map-get($spaces, '3l')};
+    padding-bottom: #{map-get($spaces, '3l')};
+    text-align: center;
+}
