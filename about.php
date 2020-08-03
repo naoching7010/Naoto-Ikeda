@@ -146,7 +146,7 @@
                     </h3>
                     <div class="row">
                         <div class="col-sm-4 section-panel">
-                            <div class="points-item js-add-active animation slide-right">
+                            <div class="points-item js-add-active animation slide-right" ontouchstart="">
                                 <div class="points-icn">
                                     <i class="fas fa-crosshairs"></i>
                                 </div>
@@ -160,7 +160,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="points-item js-add-active animation slide-up">
+                            <div class="points-item js-add-active animation slide-up" ontouchstart="">
                                 <div class="points-icn">
                                     <i class="fas fa-thumbs-up"></i>
                                 </div>
@@ -174,7 +174,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="points-item js-add-active animation slide-left">
+                            <div class="points-item js-add-active animation slide-left" ontouchstart="">
                                 <div class="points-icn">
                                     <i class="fas fa-sync"></i>
                                 </div>

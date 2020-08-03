@@ -465,13 +465,13 @@ $circle_size_md: 160px;
         height: 100%;
         background: #ffffff;
         padding: #{map-get($spaces, '5l')}  #{map-get($spaces, 'xl')};
-        &:hover .services-icn, &:active .services-icn {
+        &:hover .services-icn {
             color: #fff;
             background: #22357e;
             transition: all .5s;
             animation: jump 0.9s linear 0s 1;
         }
-        &:hover .services-title, &:active .services-title {
+        &:hover .services-title {
             color: #22357e;
         }
     }
@@ -673,7 +673,7 @@ $circle_size_md: 160px;
         // @include sm() {
         //     margin-bottom: #{map-get($spaces, 'xl')};
         // }
-        &:hover, &:active {
+        &:hover {
             transition: all .5s;
             transform: scale(1.1) !important;
             border: 5px solid #ec6b9c;

@@ -313,7 +313,7 @@ EOT;
                     </p>
                     <div class="row">
                         <div class="col-sm-4 section-panel">
-                            <div class="services-item js-add-active animation zoom-in">
+                            <div class="services-item js-add-active animation zoom-in" ontouchstart="">
                                 <div class="services-icn">
                                     <i class="fas fa-code"></i>
                                 </div>
@@ -328,7 +328,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="services-item js-add-active animation zoom-in">
+                            <div class="services-item js-add-active animation zoom-in" ontouchstart="">
                                 <div class="services-icn">
                                     <i class="fas fa-desktop"></i>
                                 </div>
@@ -344,7 +344,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="services-item js-add-active animation zoom-in">
+                            <div class="services-item js-add-active animation zoom-in" ontouchstart="">
                                 <div class="services-icn">
                                     <i class="fas fa-wrench"></i>
                                 </div>

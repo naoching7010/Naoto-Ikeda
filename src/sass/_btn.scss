@@ -28,7 +28,10 @@
         &::after {
             content: "";
             position: absolute;
+            top: 0;
             right: 30px;
+            bottom: 0;
+            margin: auto;
             width: 10px;
             height: 10px;
             border-top: 2px solid #ffffff;
