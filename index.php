@@ -84,44 +84,10 @@ EOT;
        
     }
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naoto Ikeda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/fontawesome-free-5.11.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./dist/css/app.css">
-
-</head>
-<body>
-    <header id="header">
-        <div class="site-width">
-            <div class="flex flex-between flex-middle">
-                <a class="header-" href="./index.html">
-                    <h1 class="header-title">
-                        Naoto Ikeda<br>
-                        <span class="header-sub-title">Student & Web Engineer</span>
-                    </h1>
-                </a>
-                <div class="menu-trigger js-toggle-sp-menu" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav js-toggle-sp-menu-target">
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#works">Works</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    $nav = ['about', 'skills', 'works', 'services'];
+    require('header.php');
+?>
     <main id="main">
         <section id="top-img">
             <div class="container top-container">
@@ -169,7 +135,7 @@ EOT;
                                     <i class="fab fa-twitter"></i>
                                 </a>
                                 <div class="btn-group">
-                                    <a class="btn btn-more btn-slidein btn-block" href="./about.html">
+                                    <a class="btn btn-more btn-slidein btn-block" href="./about.php">
                                         more
                                     </a>
                                 </div>
@@ -435,9 +401,6 @@ EOT;
             </div>
         </section>
     </main>
-    <footer id="footer">
-        <small>Copyright © Naoto Ikeda All Rights Reserved</small>
-    </footer>
-    <script src="./dist/js/bundle.js"></script>
-</body>
-</html>
+<?php
+    require('footer.php');
+?>

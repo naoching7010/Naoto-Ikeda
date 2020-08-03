@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naoto Ikeda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/fontawesome-free-5.11.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./dist/css/app.css">
-
-</head>
-<body>
-    <header id="header">
-        <div class="site-width">
-            <div class="flex flex-between flex-middle">
-                <a href="./index.html">
-                    <h1 class="header-title">
-                        Naoto Ikeda<br>
-                        <span class="header-sub-title">Student & Web Engineer</span>
-                    </h1>
-                </a>
-                <div class="menu-trigger js-toggle-sp-menu" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav js-toggle-sp-menu-target">
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#hobby">Hobby</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#career">Career</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#points">Points</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#vision">Vision</a></li>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    $nav = ['hobby', 'career', 'points', 'vision'];
+    require('header.php');
+?>
     <main id="main">
         <section class="section pb-0">
             <h2 class="section-title-main mb-0">
@@ -259,7 +225,7 @@
                         <p class="section-title-main-en"><span>Contact</span></p>
                     </h2>
                     <div class="row justify-content-center">
-                        <a class="btn btn-contact" href="./index.html#contact">
+                        <a class="btn btn-contact" href="./index.php#contact">
                             お問い合わせはコチラ
                         </a>
                     </div>
@@ -267,9 +233,6 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
-        <small>Copyright © Naoto Ikeda All Rights Reserved</small>
-    </footer>
-    <script src="./dist/js/bundle.js"></script>
-</body>
-</html>
+<?php
+    require('footer.php');
+?>
