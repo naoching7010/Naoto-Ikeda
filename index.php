@@ -45,19 +45,18 @@
 3営業日以内に、担当者 池田 よりご連絡いたしますので
 今しばらくお待ちくださいませ。
 
-━━━━━━□■□　お問い合わせ内容　□■□━━━━━━
+□■□　お問い合わせ内容　□■□
 お名前：{$name}
 E-Mail：{$email}
 お問い合わせ内容：{$content}
 
 お問い合わせ日時：{$date->format('Y年m月d日')}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-———————————————————————
+=======================
 【担当情報】
 担当：池田 直人
 メール：{$email_host}
-———————————————————————
+=======================
 EOT;
             $result['client'] = mb_send_mail($client['to'], $client['subject'], $client['content']);
 
@@ -68,13 +67,12 @@ EOT;
             $host['content'] = <<<EOT
 お問い合わせを受け付けしました。
 
-━━━━━━□■□　お問い合わせ内容　□■□━━━━━━
+□■□　お問い合わせ内容　□■□
 お名前：{$name}
 E-Mail：{$email}
 お問い合わせ内容：{$content}
 
 お問い合わせ日時：{$date->format('Y年m月d日')}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EOT;
             $result['host'] = mb_send_mail($host['to'], $host['subject'], $host['content']);
             if($result['client'] && $result['host']) {
