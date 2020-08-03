@@ -24,6 +24,7 @@
         if(empty($err_msg)) {
 
             $date = new DateTime('now');
+            $email_host = 'ikeda.naoto.98@gmail.com';
 
             mb_language("Japanese");
             mb_internal_encoding("UTF-8");
@@ -55,14 +56,14 @@ E-Mail：{$email}
 ———————————————————————
 【担当情報】
 担当：池田 直人
-メール：ikeda.naoto.98@gmail.com
+メール：{$email_host}
 ———————————————————————
 EOT;
             $result['client'] = mb_send_mail($client['to'], $client['subject'], $client['content']);
 
 
             $host = array();
-            $host['to'] = $email;
+            $host['to'] = $email_host;
             $host['subject'] = 'お問い合わせを受け付けしました';
             $host['content'] = <<<EOT
 お問い合わせを受け付けしました。
