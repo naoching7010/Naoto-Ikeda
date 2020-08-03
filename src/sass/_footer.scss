@@ -4,4 +4,7 @@
     padding-top: #{map-get($spaces, '3l')};
     padding-bottom: #{map-get($spaces, '3l')};
     text-align: center;
+    @include sm() {
+        font-size: #{map-get($font-size, 's')};
+    }
 }
