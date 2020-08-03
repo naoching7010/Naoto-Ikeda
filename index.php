@@ -159,7 +159,7 @@ EOT;
                     </p>
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-html">
                                     <div class="skills-language">
                                         <img src="./svg/html.svg" alt="">
@@ -173,7 +173,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-css">
                                     <div class="skills-language">
                                         <img src="./svg/css.svg" alt="">
@@ -187,7 +187,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-js">
                                     <div class="skills-language">
                                         <img src="./svg/javascript.svg" alt="">
@@ -201,7 +201,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-php">
                                     <div class="skills-language">
                                         <img src="./svg/php.svg" alt="">
@@ -215,7 +215,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-vue">
                                     <div class="skills-language">
                                         <img src="./svg/vue.svg" alt="">
@@ -229,7 +229,7 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="skills-item">
+                            <div class="skills-item" ontouchstart="">
                                 <div class="skills-circle js-show-laravel">
                                     <div class="skills-language">
                                         <img src="./svg/laravel.svg" alt="">
