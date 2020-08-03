@@ -313,12 +313,12 @@ EOT;
                     </p>
                     <div class="row">
                         <div class="col-sm-4 section-panel">
-                            <div class="service-item js-add-active animation zoom-in">
-                                <div class="service-icn">
+                            <div class="services-item js-add-active animation zoom-in">
+                                <div class="services-icn">
                                     <i class="fas fa-code"></i>
                                 </div>
-                                <h3 class="service-title">コーディング</h3>
-                                <p class="service-price">
+                                <h3 class="services-title">コーディング</h3>
+                                <p class="services-price">
                                     <span class="fontsize-xl font-weight-bold">1</span>万円~
                                 </p>
                                 <p>
@@ -328,12 +328,12 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="service-item js-add-active animation zoom-in">
-                                <div class="service-icn">
+                            <div class="services-item js-add-active animation zoom-in">
+                                <div class="services-icn">
                                     <i class="fas fa-desktop"></i>
                                 </div>
-                                <h3 class="service-title">ホームページ制作</h3>
-                                <p class="service-price">
+                                <h3 class="services-title">ホームページ制作</h3>
+                                <p class="services-price">
                                     <span class="fontsize-xl font-weight-bold">5</span>万円~
                                 </p>
                                 <p>
@@ -344,12 +344,12 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="service-item js-add-active animation zoom-in">
-                                <div class="service-icn">
+                            <div class="services-item js-add-active animation zoom-in">
+                                <div class="services-icn">
                                     <i class="fas fa-wrench"></i>
                                 </div>
-                                <h3 class="service-title">Webシステム開発</h3>
-                                <p class="service-price">
+                                <h3 class="services-title">Webシステム開発</h3>
+                                <p class="services-price">
                                     <span class="fontsize-xl font-weight-bold">15</span>万円~
                                 </p>
                                 <p>

@@ -8007,16 +8007,16 @@ input:focus, textarea:focus, button:focus, select:focus {
   .work-link img {
     transition: all 0.5s; }
 
-.service-item {
+.services-item {
   height: 100%;
   background: #ffffff;
   padding: 50px 20px; }
-  .service-item:hover .service-icn {
+  .services-item:hover .service-title, .services-item:active .service-icn {
     color: #fff;
     background: #22357e;
     transition: all .5s;
     animation: jump 0.9s linear 0s 1; }
-  .service-item:hover .service-title {
+  .services-item:hover .service-title, .services-item:active .service-title {
     color: #22357e; }
 
 @keyframes jump {
@@ -8037,7 +8037,7 @@ input:focus, textarea:focus, button:focus, select:focus {
   100% {
     transform: scale(1, 1) translate(0%, 0%); } }
 
-.service-icn {
+.services-icn {
   width: 120px;
   height: 120px;
   border-radius: 100%;
@@ -8051,15 +8051,15 @@ input:focus, textarea:focus, button:focus, select:focus {
   font-size: 30px;
   transition: all 0.5s; }
 
-.service-title {
+.services-title {
   text-align: center;
   font-size: 30px;
   font-weight: bold; }
   @media screen and (min-width: 415px) and (max-width: 1079) {
-    .service-title {
+    .services-title {
       font-size: 18px; } }
 
-.service-price {
+.services-price {
   text-align: center;
   margin-bottom: 20px; }
 
@@ -8155,7 +8155,7 @@ input:focus, textarea:focus, button:focus, select:focus {
   font-size: 22px; }
   @media screen and (max-width: 414px) {
     .career-left {
-      font-size: 16px;
+      font-size: 14px;
       padding: 20px 0; } }
 
 .career-right {
@@ -8199,18 +8199,18 @@ input:focus, textarea:focus, button:focus, select:focus {
   box-sizing: border-box;
   border-radius: 3px;
   height: 100%; }
-  .points-item:hover {
+  .points-item:hover, .points-item:active {
     transition: all .5s;
     transform: scale(1.1) !important;
     border: 5px solid #ec6b9c; }
     @media screen and (max-width: 414px) {
-      .points-item:hover {
+      .points-item:hover, .points-item:active {
         transform: scale(1.05) !important; } }
-    .points-item:hover .points-icn {
+    .points-item:hover .points-icn, .points-item:active .points-icn {
       transition: all .5s;
       color: #22357e;
       animation: rotateY 0.9s linear 0s 1; }
-    .points-item:hover .points-title {
+    .points-item:hover .points-title, .points-item:active .points-title {
       transition: all .5s;
       color: #22357e; }
 

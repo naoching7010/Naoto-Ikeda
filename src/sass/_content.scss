@@ -460,18 +460,18 @@ $circle_size_md: 160px;
     }
 }
 
-.service { 
+.services { 
     &-item {
         height: 100%;
         background: #ffffff;
         padding: #{map-get($spaces, '5l')}  #{map-get($spaces, 'xl')};
-        &:hover .service-icn {
+        &:hover .service-title, &:active .service-icn {
             color: #fff;
             background: #22357e;
             transition: all .5s;
             animation: jump 0.9s linear 0s 1;
         }
-        &:hover .service-title {
+        &:hover .service-title, &:active .service-title {
             color: #22357e;
         }
     }
@@ -621,7 +621,7 @@ $circle_size_md: 160px;
         font-weight: bold;
         font-size: #{map-get($font-size, 'xl')};
         @include sm() {
-            font-size: #{map-get($font-size, 'default')};
+            font-size: #{map-get($font-size, 'm')};
             padding: #{map-get($spaces, 'xl')} 0;
         }
     }
@@ -673,7 +673,7 @@ $circle_size_md: 160px;
         // @include sm() {
         //     margin-bottom: #{map-get($spaces, 'xl')};
         // }
-        &:hover {
+        &:hover, &:active {
             transition: all .5s;
             transform: scale(1.1) !important;
             border: 5px solid #ec6b9c;
