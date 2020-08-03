@@ -14,10 +14,16 @@
         font-size: #{map-get($font-size, 'xl')};
         font-weight: bold;
         line-height: 1.0;
+        @include sm() {
+          font-size: #{map-get($font-size, 'l')};
+        }
     }
     &-sub-title {
         font-size: #{map-get($font-size, 'm')};
         font-weight: normal;
+        @include sm() {
+          font-size: #{map-get($font-size, 's')};
+        }
     }
 }
 
@@ -118,8 +124,8 @@
     transition: all .4s;
     box-sizing: border-box;
     position: relative;
-    width: 40px;
-    height: 30px;
+    width: 30px;
+    height: 21px;
     z-index: 1;
     span {
         display: inline-block;
@@ -137,7 +143,7 @@
             animation: menu-bar01 .75s forwards;
         }
         &:nth-of-type(2) {
-            top: 13px;
+            top: 9px;
             transition: all .25s .25s;
             opacity: 1;
         }
@@ -165,10 +171,10 @@
     }
     @-webkit-keyframes menu-bar01 {
         0% {
-          -webkit-transform: translateY(13px) rotate(45deg);
+          -webkit-transform: translateY(9px) rotate(45deg);
         }
         50% {
-          -webkit-transform: translateY(13px) rotate(0);
+          -webkit-transform: translateY(9px) rotate(0);
         }
         100% {
           -webkit-transform: translateY(0) rotate(0);
@@ -176,10 +182,10 @@
       }
       @keyframes menu-bar01 {
         0% {
-          transform: translateY(13px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
         }
         50% {
-          transform: translateY(13px) rotate(0);
+          transform: translateY(9px) rotate(0);
         }
         100% {
           transform: translateY(0) rotate(0);
@@ -187,10 +193,10 @@
       }
       @-webkit-keyframes menu-bar02 {
         0% {
-          -webkit-transform: translateY(-15px) rotate(-45deg);
+          -webkit-transform: translateY(-10px) rotate(-45deg);
         }
         50% {
-          -webkit-transform: translateY(-15px) rotate(0);
+          -webkit-transform: translateY(-10px) rotate(0);
         }
         100% {
           -webkit-transform: translateY(0) rotate(0);
@@ -198,10 +204,10 @@
       }
       @keyframes menu-bar02 {
         0% {
-          transform: translateY(-15px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
         }
         50% {
-          transform: translateY(-15px) rotate(0);
+          transform: translateY(-10px) rotate(0);
         }
         100% {
           transform: translateY(0) rotate(0);
@@ -213,10 +219,10 @@
           -webkit-transform: translateY(0) rotate(0);
         }
         50% {
-          -webkit-transform: translateY(13px) rotate(0);
+          -webkit-transform: translateY(9px) rotate(0);
         }
         100% {
-          -webkit-transform: translateY(13px) rotate(45deg);
+          -webkit-transform: translateY(9px) rotate(45deg);
         }
       }
       @keyframes active-menu-bar01 {
@@ -224,10 +230,10 @@
           transform: translateY(0) rotate(0);
         }
         50% {
-          transform: translateY(13px) rotate(0);
+          transform: translateY(9px) rotate(0);
         }
         100% {
-          transform: translateY(13px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
         }
       }
       @-webkit-keyframes active-menu-bar03 {
@@ -235,10 +241,10 @@
           -webkit-transform: translateY(0) rotate(0);
         }
         50% {
-          -webkit-transform: translateY(-15px) rotate(0);
+          -webkit-transform: translateY(-10px) rotate(0);
         }
         100% {
-          -webkit-transform: translateY(-15px) rotate(-45deg);
+          -webkit-transform: translateY(-10px) rotate(-45deg);
         }
       }
       @keyframes active-menu-bar03 {
@@ -246,10 +252,10 @@
           transform: translateY(0) rotate(0);
         }
         50% {
-          transform: translateY(-15px) rotate(0);
+          transform: translateY(-10px) rotate(0);
         }
         100% {
-          transform: translateY(-15px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
         }
     }
 }

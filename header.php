@@ -13,13 +13,13 @@
     <header id="header">
         <div class="site-width">
             <div class="flex flex-between flex-middle">
-                <a class="header-" href="./index.html">
+                <a class="header-" href="./index.php">
                     <h1 class="header-title">
                         Naoto Ikeda<br>
                         <span class="header-sub-title">Student & Web Engineer</span>
                     </h1>
                 </a>
-                <div class="menu-trigger js-toggle-sp-menu" href="#">
+                <div class="menu-trigger js-toggle-sp-menu">
                     <span></span>
                     <span></span>
                     <span></span>
