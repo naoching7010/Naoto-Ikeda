@@ -43,10 +43,14 @@
         }
     }
     &-submit {
-        color: #ec6b9c;
-        background: #fff;
+        color: #fff;
+        background: #ec6b9c;
         border: 2px solid #ec6b9c;
         font-weight: bold;
+        @include pc() {
+            color: #ec6b9c;
+            background: #fff;
+        }
     }
     &-twitter {
         color: #fff;
@@ -61,23 +65,32 @@
         }
     }
     &-more {
-        color: #787878;
-        border: 2px solid #787878;
+        color: #ffffff;
+        background: #ec6b9c;
         font-weight: bold;
         position: relative;
         overflow: hidden;
+        @include pc() {
+            color: #787878;
+            background: #ffffff;
+            border: 2px solid #787878;
+        }
         &::before {
             content: "";
             position: absolute;
             width: 10px;
             height: 10px;
-            border-top: 2px solid #787878;
-            border-right: 2px solid #787878;
+            border-top: 2px solid #ffffff;
+            border-right: 2px solid #ffffff;
             -moz-transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
             -o-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             right: 15px;
+            @include pc() {
+                border-top: 2px solid #787878;
+                border-right: 2px solid #787878;
+            }
         }
         &:hover::before {
             border-top: 2px solid #ffffff;
@@ -85,27 +98,29 @@
         }
     }
     &-slidein {
-        position: relative;
-        overflow: hidden;
-        &:hover {
-            color: #fff;
-            border: 2px solid #ec6b9c;
-        }
-        &::after {
-            position: absolute;
-            content:"";
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            -webkit-transition: all .5s;
-            transition: all .5s;
-        }
-        &:hover::after {
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #ec6b9c;
-            z-index: -1;
+        @include pc() {
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                color: #fff;
+                border: 2px solid #ec6b9c;
+            }
+            &::after {
+                position: absolute;
+                content:"";
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                -webkit-transition: all .5s;
+                transition: all .5s;
+            }
+            &:hover::after {
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #ec6b9c;
+                z-index: -1;
+            }
         }
     }
     &-prev, &-next {

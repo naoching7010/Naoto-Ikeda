@@ -8400,10 +8400,14 @@ input:focus, textarea:focus, button:focus, select:focus {
       -o-transform: rotate(45deg);
       -ms-transform: rotate(45deg); }
   .btn-submit {
-    color: #ec6b9c;
-    background: #fff;
+    color: #fff;
+    background: #ec6b9c;
     border: 2px solid #ec6b9c;
     font-weight: bold; }
+    @media screen and (min-width: 1080px) {
+      .btn-submit {
+        color: #ec6b9c;
+        background: #fff; } }
   .btn-twitter {
     color: #fff;
     background: #00acee;
@@ -8415,46 +8419,56 @@ input:focus, textarea:focus, button:focus, select:focus {
       color: #fff;
       opacity: 0.8; }
   .btn-more {
-    color: #787878;
-    border: 2px solid #787878;
+    color: #ffffff;
+    background: #ec6b9c;
     font-weight: bold;
     position: relative;
     overflow: hidden; }
+    @media screen and (min-width: 1080px) {
+      .btn-more {
+        color: #787878;
+        background: #ffffff;
+        border: 2px solid #787878; } }
     .btn-more::before {
       content: "";
       position: absolute;
       width: 10px;
       height: 10px;
-      border-top: 2px solid #787878;
-      border-right: 2px solid #787878;
+      border-top: 2px solid #ffffff;
+      border-right: 2px solid #ffffff;
       -moz-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       right: 15px; }
+      @media screen and (min-width: 1080px) {
+        .btn-more::before {
+          border-top: 2px solid #787878;
+          border-right: 2px solid #787878; } }
     .btn-more:hover::before {
       border-top: 2px solid #ffffff;
       border-right: 2px solid #ffffff; }
-  .btn-slidein {
-    position: relative;
-    overflow: hidden; }
-    .btn-slidein:hover {
-      color: #fff;
-      border: 2px solid #ec6b9c; }
-    .btn-slidein::after {
-      position: absolute;
-      content: "";
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .5s;
-      transition: all .5s; }
-    .btn-slidein:hover::after {
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #ec6b9c;
-      z-index: -1; }
+  @media screen and (min-width: 1080px) {
+    .btn-slidein {
+      position: relative;
+      overflow: hidden; }
+      .btn-slidein:hover {
+        color: #fff;
+        border: 2px solid #ec6b9c; }
+      .btn-slidein::after {
+        position: absolute;
+        content: "";
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
+      .btn-slidein:hover::after {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ec6b9c;
+        z-index: -1; } }
   .btn-prev, .btn-next {
     position: absolute;
     top: 0;
