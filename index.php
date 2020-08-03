@@ -261,7 +261,7 @@ EOT;
                     <div class="row">
                         <div class="col-sm-4 section-panel">
                             <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://todolist-manage.com/">
+                                <a class="work-link" href="https://todolist-manage.com/" ontouchstart="">
                                     <h3 class="work-title">Webサービス「To Do List！」</h3>
                                     <p class="work-description">
                                         プログラミング学習を初めて1ヶ月の時に制作しました。いわゆる「CRUD」機能を盛り込んだ基本的なWebサービスです。
@@ -272,7 +272,7 @@ EOT;
                         </div>
                         <div class="col-sm-4 section-panel">
                             <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://freeclimbing-market.com/">
+                                <a class="work-link" href="https://freeclimbing-market.com/" ontouchstart="">
                                     <h3 class="work-title">Webサービス「FREECLIMBING」</h3>
                                     <p class="work-description">
                                         クライミング用品のフリマサービスです。<br>
@@ -285,7 +285,7 @@ EOT;
                         </div>
                         <div class="col-sm-4 section-panel">
                             <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://step-share.com/">
+                                <a class="work-link" href="https://step-share.com/" ontouchstart="">
                                     <h3 class="work-title">Webサービス「STEP」</h3>
                                     <p class="work-description">
                                         「あなたの人生のSTEPを共有しよう」をキャッチコピーに開発を行った学習支援サービスです。<br>
