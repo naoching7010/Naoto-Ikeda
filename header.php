@@ -28,12 +28,7 @@
                     <ul class="nav-menu">
                         <?php for ($i=0; $i < count($nav); $i++): ?>
                             <li class="nav-item"><a class="nav-link js-nav-scroll" href="#<?php echo $nav[$i]; ?>"><?php echo ucfirst($nav[$i]); ?></a></li>
-                            <!-- <li class="nav-item"><a class="nav-link js-nav-scroll" href="#skills">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link js-nav-scroll" href="#works">Works</a></li>
-                            <li class="nav-item"><a class="nav-link js-nav-scroll" href="#services">Services</a></li>
-                            <li class="nav-item"><a class="nav-link js-nav-scroll" href="#contact">Contact</a></li> -->
                         <?php endfor; ?>
-                        <li class="nav-item"><a class="nav-link js-nav-scroll" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>

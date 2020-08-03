@@ -36,7 +36,7 @@ gulp.task('minifycss', function(){
 
 gulp.task('browser-sync', function(){
     browserSync.init({
-        proxy: "localhost:8888/Naoto-Ikeda/",
+        proxy: "localhost:8888/Naoto-Ikeda/confirm.php",
         // server: { 
         //     baseDir: './',
         //     index: 'index.php'

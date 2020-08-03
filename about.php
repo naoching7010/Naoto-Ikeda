@@ -1,5 +1,5 @@
 <?php
-    $nav = ['hobby', 'career', 'points', 'vision'];
+    $nav = ['hobby', 'career', 'points', 'vision', 'contact'];
     require('header.php');
 ?>
     <main id="main">

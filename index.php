@@ -58,7 +58,7 @@ E-Mail：{$email}
 メール：{$email_host}
 =======================
 EOT;
-            $result['client'] = mb_send_mail($client['to'], $client['subject'], $client['content']);
+            mb_send_mail($client['to'], $client['subject'], $client['content']);
 
 
             $host = array();
@@ -74,18 +74,16 @@ E-Mail：{$email}
 
 お問い合わせ日時：{$date->format('Y年m月d日')}
 EOT;
-            $result['host'] = mb_send_mail($host['to'], $host['subject'], $host['content']);
-            if($result['client'] && $result['host']) {
-                // echo "成功";
-            }else {
-                // echo "失敗";
-            }
+            mb_send_mail($host['to'], $host['subject'], $host['content']);
+
+            header('Location:confirm.php');
+            exit;
         }
        
     }
 ?>
 <?php
-    $nav = ['about', 'skills', 'works', 'services'];
+    $nav = ['about', 'skills', 'works', 'services', 'contact'];
     require('header.php');
 ?>
     <main id="main">
