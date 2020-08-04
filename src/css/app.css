@@ -7402,12 +7402,14 @@ input:focus, textarea:focus, button:focus, select:focus {
       .btn-slidein::after {
         position: absolute;
         content: "";
+        top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
         -webkit-transition: all .5s;
         transition: all .5s; }
       .btn-slidein:hover::after {
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
