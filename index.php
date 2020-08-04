@@ -112,12 +112,12 @@ EOT;
                         <p class="section-title-main-en"><span>About Me</span></p>
                     </h2>
                     <div class="row justify-content-between about-body">
-                        <div class="col-sm-4 about-img">
-                            <div class="img-circle">
+                        <div class="col-sm-4 about-left">
+                            <div class="about-img">
                                 <img src="./image/profile.JPG" alt="">
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 about-right">
                             <p class="about-name">池田 直人（いけだ なおと）</p>
                             <p class="about-status">大学生 & Webエンジニア</p>
                             <p class="mb-3">
@@ -259,10 +259,10 @@ EOT;
                     </p>
                     <div class="row">
                         <div class="col-sm-4 section-panel">
-                            <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://todolist-manage.com/" ontouchstart="">
-                                    <h3 class="work-title">Webサービス「To Do List！」</h3>
-                                    <p class="work-description">
+                            <div class="works-item js-add-active animation slide-up">
+                                <a class="works-link" href="https://todolist-manage.com/" ontouchstart="">
+                                    <h3 class="works-title">Webサービス「To Do List！」</h3>
+                                    <p class="works-description">
                                         プログラミング学習を初めて1ヶ月の時に制作しました。いわゆる「CRUD」機能を盛り込んだ基本的なWebサービスです。
                                     </p>
                                     <img src="./image/todolist.png" alt="">
@@ -270,10 +270,10 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://freeclimbing-market.com/" ontouchstart="">
-                                    <h3 class="work-title">Webサービス「FREECLIMBING」</h3>
-                                    <p class="work-description">
+                            <div class="works-item js-add-active animation slide-up">
+                                <a class="works-link" href="https://freeclimbing-market.com/" ontouchstart="">
+                                    <h3 class="works-title">Webサービス「FREECLIMBING」</h3>
+                                    <p class="works-description">
                                         クライミング用品のフリマサービスです。<br>
                                         プログラミング学習を初めて2ヶ月の時に制作しました。<brs>
                                         フレームワークを一切使わないフルスクラッチで開発を行いました。
@@ -283,10 +283,10 @@ EOT;
                             </div>
                         </div>
                         <div class="col-sm-4 section-panel">
-                            <div class="work-item js-add-active animation slide-up">
-                                <a class="work-link" href="https://step-share.com/" ontouchstart="">
-                                    <h3 class="work-title">Webサービス「STEP」</h3>
-                                    <p class="work-description">
+                            <div class="works-item js-add-active animation slide-up">
+                                <a class="works-link" href="https://step-share.com/" ontouchstart="">
+                                    <h3 class="works-title">Webサービス「STEP」</h3>
+                                    <p class="works-description">
                                         「あなたの人生のSTEPを共有しよう」をキャッチコピーに開発を行った学習支援サービスです。<br>
                                         人それぞれの「この順番で学ぶとよかった」という「STEP」を投稿し、他の人はその「STEP」を見ながら学習を進めていくことができます。
                                     </p>

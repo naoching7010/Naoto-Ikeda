@@ -1,0 +1,134 @@
+.section {
+    padding-top: #{map-get($spaces, '10l')};
+    padding-bottom: #{map-get($spaces, '10l')};
+    &-title {
+        &-main {
+            font-size: #{map-get($font-size, '4l')};
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: #{map-get($spaces, '6l')};
+            @include sm() {
+                font-size: #{map-get($font-size, '3l')};
+            }
+            &-en {
+                font-size: #{map-get($font-size, 'xl')};
+                font-weight: normal;
+                @include sm() {
+                    font-size: #{map-get($font-size, 'l')};
+                }
+                & span {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 55px;
+                    @include sm() {
+                        padding: 0 35px;
+                    }
+                    &:before, &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        display: inline-block;
+                        width: 45px;
+                        height: 1px;
+                        background-color: #787878;
+                        @include sm() {
+                            width: 25px;
+                        }
+                      }
+                      &:before {
+                        left:0;
+                      }
+                      &:after {
+                        right: 0;
+                      }
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 70px;
+                height: 2px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;  
+                background: #7d2b2b;
+                @include sm() {
+                    width: 45px;
+                }
+            }
+        }
+        &-sub {
+            display: inline-block;
+            margin-bottom: #{map-get($spaces, '6l')};
+            position: relative;
+            font-size: #{map-get($font-size, 'xxl')};
+            font-weight: bold;
+            @include sm() {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: #{map-get($font-size, 'l')};
+            }
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid #22357e;
+            }
+            &::before {
+                top: 0px;
+                left: 0px;
+            }
+            &::after {
+                top: 4px;
+                left: 4px;
+            }
+            &-inner {
+                display: inline-block;
+                padding: #{map-get($spaces, 'l')};
+            }
+            &-en {
+                display: inline;
+                font-size: #{map-get($font-size, 'l')};
+                font-weight: normal;
+                @include sm() {
+                    font-size: #{map-get($font-size, 'm')};
+                }
+                & span {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 30px;
+                    &:before, &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        display: inline-block;
+                        width: 20px;
+                        height: 1px;
+                        background-color: #787878;
+                      }
+                      &:before {
+                        left:0;
+                      }
+                      &:after {
+                        right: 0;
+                      }
+                }
+            }
+        }
+    }
+    &-description {
+        font-size: #{map-get($font-size, 'l')};
+        text-align: center;
+        margin-bottom: #{map-get($font-size, '5l')};
+        line-height: 2.0;
+    }
+    &-panel {
+        height: auto;
+        @include sm() {
+            margin-bottom: #{map-get($spaces, 'xl')};
+        }
+    }
+}

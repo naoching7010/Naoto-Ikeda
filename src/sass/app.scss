@@ -1,13 +1,22 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
-@import './reset';
-
+@import './_reset';
 @import './_base';
+
+@import './_animation';
+@import './_btn';
+@import './_fontsize';
+
 @import './_header';
-@import './top-img';
-@import './content';
-@import './footer';
-@import './animation';
-@import './col';
-@import './btn';
-@import './fontsize';
-@import './flex'
+@import './_top-img';
+@import './_section';
+@import './_about';
+@import './_skills';
+@import './_works';
+@import './_services';
+@import './_contact';
+@import './_hobby';
+@import './_career';
+@import './_points';
+@import './_vision';
+@import './_confirm';
+@import './_footer';

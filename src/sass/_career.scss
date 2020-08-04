@@ -1,0 +1,74 @@
+.career {
+    &-item {
+        &:last-child {
+            .career-right {
+                &::before {
+                    content: "\f005";
+                    font-family: "Font Awesome 5 Free";
+                    color: #ecd96b;
+                    font-weight: bold;
+                    position: absolute;
+                    font-size: #{map-get($font-size, '3l')};
+                    top: 8px;
+                    left: -21px;
+                    border-radius: 100%;
+                    background: none;
+                    @include sm() {
+                        font-size: #{map-get($font-size, 'xl')};
+                        top: 15px;
+                        left: -13px;
+                    }
+                }
+            }
+        }
+    }
+    &-body .col-8 {
+        padding-left: 0;
+    }
+    &-left {
+        color: #333;
+        padding: #{map-get($spaces, 'xl')} #{map-get($spaces, '8l')};
+        text-align: right;
+        font-weight: bold;
+        font-size: #{map-get($font-size, 'xl')};
+        @include sm() {
+            font-size: #{map-get($font-size, 'default')};
+            padding: #{map-get($spaces, 'xl')} 0;
+        }
+    }
+    &-right {
+        border-left: 2px solid #787878;
+        padding: #{map-get($spaces, 'xl')} #{map-get($spaces, '8l')};
+        position: relative;
+        @include sm() {
+            padding: #{map-get($spaces, 'xl')} #{map-get($spaces, 'm')};
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 25px;
+            left: -11px;
+            border-radius: 100%;
+            background: #ec6b9c;
+            @include sm() {
+                width: 15px;
+                height: 15px;
+                top: 24px;
+                left: -9px;
+            }
+        }
+    }
+    &-title {
+        color: #333;
+        font-weight: bold;
+        font-size: #{map-get($font-size, 'xl')};
+        @include sm() {
+            font-size: #{map-get($font-size, 'default')};
+        }
+    }
+    &-description {
+        font-size: #{map-get($font-size, 'm')};
+    }
+}

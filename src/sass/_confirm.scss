@@ -1,0 +1,20 @@
+#confirm {
+    @include pc() {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+.confirm {
+    &-title {
+        font-size: #{map-get($font-size,'3l')};
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: #{map-get($spaces,'7l')};
+        @include sm() {
+            font-size: #{map-get($font-size,'xl')};
+        }
+    }
+    &-text {
+        margin-bottom: #{map-get($spaces,'xl')};
+    }
+}

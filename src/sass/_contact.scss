@@ -1,0 +1,41 @@
+.contact {
+    &-mail {
+        font-size: #{map-get($font-size, 'l')};
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: #{map-get($spaces, '8l')};
+        span {
+            color: #ec6b9c;
+            margin-left: #{map-get($spaces, 's')};
+        }
+    }
+    &-form {
+        @include pc() {
+            width: 45%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-group {
+            margin-bottom: #{map-get($spaces, 'xxl')};
+        }
+        &-input, &-textarea {
+            width: 100%;
+            border: none;
+            background: #eeeeee;
+            padding: #{map-get($spaces, 'm')};
+            &-err {
+                background: #ffeaea;
+            }
+        }
+        &-input {
+            height: 40px;
+        }
+        &-textarea {
+            height: 200px;
+            resize: none;
+        }
+        &-err {
+            color: #ff6f6f;
+        }
+    }
+}

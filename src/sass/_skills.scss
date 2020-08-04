@@ -1,0 +1,169 @@
+$circle_size: 165px;
+.skills{
+    &-item {
+        margin-bottom: #{map-get($spaces, '5l')};
+        &:hover img {
+            -moz-transform: scale(1.2,1.2);
+            -webkit-transform: scale(1.2,1.2);
+            -o-transform: scale(1.2,1.2);
+            -ms-transform: scale(1.2,1.2);
+            transition: all 0.5s;
+        }
+    }
+    &-circle{
+         position: relative;
+         width: $circle_size;
+         height: $circle_size;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: #{map-get($spaces, '3l')};
+         font-size: #{map-get($font-size, 'l')};
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         text-align: center;
+         overflow: hidden;
+         & img {
+            transition: all 0.5s;
+         }
+    }
+    &-circle::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -1*($circle_size / 2);
+        width: $circle_size;
+        height: $circle_size;
+        transform-origin: right $circle_size / 2;
+        z-index: 1;
+    }
+    &-circle::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: $circle_size / 2;
+        width: $circle_size;
+        height: $circle_size;
+        transform-origin: left $circle_size / 2;
+        z-index: 1;
+    }
+    &-language{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        padding: #{map-get($spaces, '3l')};
+        width: $circle_size - 20;
+        height: $circle_size - 20;
+        line-height: $circle_size - 20;
+        background: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        z-index: 2;
+        box-sizing: border-box;
+        // @include sm(){
+        //     width: $circle_size_sm - 20;
+        //     height: $circle_size_sm - 20;
+        //     line-height: $circle_size_sm - 20;
+        // }
+        // @include md(){
+        //     width: $circle_size_md - 20;
+        //     height: $circle_size_md - 20;
+        //     line-height: $circle_size_md - 20;
+        // }
+    }
+    $languages: (
+        html: (
+            main-color: #F16529,
+            sub-color: #f0d9d0,
+            deg: 0deg
+        ),
+        css: (
+            main-color: #33A9DC,
+            sub-color: #cbdfe9,
+            deg: 0deg
+        ),
+        js: (
+            main-color: #F0DB50,
+            sub-color: #eee9ce,
+            deg: 75deg
+        ),
+        php: (
+            main-color: #6181B6,
+            sub-color: #d2d9e4,
+            deg: 50deg
+        ),
+        vue: (
+            main-color: #41B883,
+            sub-color: #cdecde,
+            deg-right: 180deg,
+            deg: 30deg
+        ),
+        laravel: (
+            main-color: #F94F31,
+            sub-color: #ffcac1,
+            deg: 30deg
+        )
+    );
+
+    @each $language, $property in $languages {
+        &-#{$language} {
+            background: #{map-get($property, main-color)};
+            &::before, &::after {
+                background: #{map-get($property, sub-color)};
+            }
+            &::before {
+                transform: rotate(#{map-get($property, deg)});
+            }
+            &::after {
+                transform: rotate(360deg);
+                background: #{map-get($property, main-color)};
+            }
+            @include pc() {
+                &::before, &::after {
+                    background: #{map-get($property, sub-color)};
+                }
+                &::before {
+                    animation: rotate-circle-#{$language}-left 2s linear forwards;
+                }
+                &::after {
+                    animation: rotate-circle-#{$language}-right 2s linear forwards;
+                }
+            }
+        }
+        @keyframes rotate-circle-#{$language}-right{
+            0% {
+                transform: rotate(0deg);
+                background: #{map-get($property, sub-color)};
+            }
+            50% {
+                transform: rotate(180deg);
+                background: #{map-get($property, sub-color)};
+            }
+            50.01% {
+                transform: rotate(360deg);
+                background: #{map-get($property, main-color)};
+            }
+            100%{
+                transform: rotate(360deg);
+                background: #{map-get($property, main-color)};
+            }
+        }
+        @keyframes rotate-circle-#{$language}-left{
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(#{map-get($property, deg)});
+            }
+        }
+    }
+}

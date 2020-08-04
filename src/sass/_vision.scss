@@ -1,0 +1,30 @@
+.vision {
+    &-body {
+        text-align: center;
+    }
+    &-title {
+        font-size: #{map-get($font-size, 'xl')};
+        margin-bottom: #{map-get($spaces, 'xl')};
+        @include sm() {
+            font-size: #{map-get($font-size, 'l')};
+        }
+    }
+    &-emphasis {
+        font-size: #{map-get($font-size, '3l')};
+        font-weight: bold;
+        @include sm() {
+            font-size: #{map-get($font-size, 'xl')};
+        }
+    }
+    &-description {
+        margin-bottom: #{map-get($spaces, 'xl')};;
+        line-height: 2.0;
+    }
+    &-propaganda {
+        font-size: #{map-get($font-size, 'xl')};
+        font-weight: bold;
+        @include sm() {
+            font-size: #{map-get($font-size, 'l')};
+        }
+    }
+}
