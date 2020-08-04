@@ -7350,7 +7350,8 @@ input:focus, textarea:focus, button:focus, select:focus {
         color: #ec6b9c;
         background: #ffffff; } }
     .btn-submit:hover {
-      color: #ffffff; }
+      color: #ffffff;
+      background: #ec6b9c; }
   .btn-twitter {
     color: #ffffff;
     background: #00acee;
@@ -7373,7 +7374,8 @@ input:focus, textarea:focus, button:focus, select:focus {
         background: #ffffff;
         border: 2px solid #787878; } }
     .btn-more:hover {
-      color: #ffffff; }
+      color: #ffffff;
+      background: #ec6b9c; }
     .btn-more::before {
       content: "";
       position: absolute;
@@ -7930,7 +7932,8 @@ input:focus, textarea:focus, button:focus, select:focus {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .skills-circle img {
     transition: all 0.5s; }
 

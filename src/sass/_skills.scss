@@ -23,6 +23,7 @@ $circle_size: 165px;
          -moz-border-radius: 50%;
          text-align: center;
          overflow: hidden;
+         z-index: 1;
          & img {
             transition: all 0.5s;
          }
