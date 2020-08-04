@@ -66,83 +66,64 @@
                 </h3>
                 <div class="career-body js-add-active animation zoom-in">
                     <div class="row career-item">
-                        <div class="col-4">
-                            <div class="career-left">
-                                <p>2017年 3月</p>
-                            </div>
+                        <div class="col-4 career-left">
+                            <p>2017年 3月</p>
                         </div>
-                        <div class="col-8">
-                            <div class="career-right">
-                                <p class="career-title">浜松城北工業高等学校 卒業</p>
-                                <p class="career-description">
-                                    工業高校に入学し、旋盤など機械工学から電子回路など電子工学など幅広く学びました。<br>
-                                    高校2年生の頃に進学を決意し、そこからは受験勉強一筋の生活を過ごしてきました。
-                                </p>
-                            </div>
+                        <div class="col-8 career-right">
+                            <p class="career-title">浜松城北工業高等学校 卒業</p>
+                            <p class="career-description">
+                                工業高校に入学し、旋盤など機械工学から電子回路など電子工学など幅広く学びました。<br>
+                                高校2年生の頃に進学を決意し、そこからは受験勉強一筋の生活を過ごしてきました。
+                            </p>
                         </div>
                     </div>
                     <div class="row career-item">
-                        <div class="col-4">
-                            <div class="career-left">
-                                <p>2017年 4月</p>
-                            </div>
+                        <div class="col-4 career-left">
+                            <p>2017年 4月</p>
                         </div>
-                        <div class="col-8">
-                            <div class="career-right">
-                                <p class="career-title">静岡大学 工学部 数理システム工学科 入学</p>
-                                <p class="career-description">
-                                    第一志望であった静岡大学へ入学しました。<br>
-                                    大学では、モデリングやシミュレーションなどの数理科学やプログラミングなどの情報科学を学んでいます。<br>
-                                </p>
-                            </div>
+                        <div class="col-8 career-right">
+                            <p class="career-title">静岡大学 工学部 数理システム工学科 入学</p>
+                            <p class="career-description">
+                                第一志望であった静岡大学へ入学しました。<br>
+                                大学では、モデリングやシミュレーションなどの数理科学やプログラミングなどの情報科学を学んでいます。<br>
+                            </p>
                         </div>
                     </div>
                     <div class="row career-item">
-                        <div class="col-4">
-                            <div class="career-left">
-                                <p>2019年 7月</p>
-                            </div>
+                        <div class="col-4 career-left">
+                            <p>2019年 7月</p>
                         </div>
-                        <div class="col-8">
-                            <div class="career-right">
-                                <p class="career-title">プログラミングスクール 入会</p>
-                                <p class="career-description">
-                                    大学では学べないようなWeb開発を学びたいと思い、自主的にプログラミング学習を始めました。<br>
-                                    ここから、プライベートの大半の時間をプログラミング学習に費やす生活が始まります。
-                                </p>
-                            </div>
+                        <div class="col-8 career-right">
+                            <p class="career-title">プログラミングスクール 入会</p>
+                            <p class="career-description">
+                                大学では学べないようなWeb開発を学びたいと思い、自主的にプログラミング学習を始めました。<br>
+                                ここから、プライベートの大半の時間をプログラミング学習に費やす生活が始まります。
+                            </p>
+
                         </div>
                     </div>
                     <div class="row career-item">
-                        <div class="col-4">
-                            <div class="career-left">
-                                <p>2020年 3月</p>
-                            </div>
+                        <div class="col-4 career-left">
+                            <p>2020年 3月</p>
                         </div>
-                        <div class="col-8">
-                            <div class="career-right">
-                                <p class="career-title">プログラミングスクール 卒業</p>
-                                <p class="career-description">
-                                    約8ヶ月かけてプログラミングスクールを卒業しました。<br>
-                                    HTML/CSS/JavaScript/PHP/MySQLやフレームワークを学び、Web開発に必要なスキルを身に付けることができました。
-                                </p>
-                            </div>
+                        <div class="col-8 career-right">
+                            <p class="career-title">プログラミングスクール 卒業</p>
+                            <p class="career-description">
+                                約8ヶ月かけてプログラミングスクールを卒業しました。<br>
+                                HTML/CSS/JavaScript/PHP/MySQLやフレームワークを学び、Web開発に必要なスキルを身に付けることができました。
+                            </p>
                         </div>
                     </div>
                     <div class="row career-item">
-                        <div class="col-4">
-                            <div class="career-left">
-                                <p>NOW！</p>
-                            </div>
+                        <div class="col-4 career-left">
+                            <p>NOW！</p>
                         </div>
-                        <div class="col-8">
-                            <div class="career-right">
-                                <p class="career-title">研究 & 就職活動</p>
-                                <p class="career-description">
-                                    社会集団の協力行動を進化ゲーム理論を用いて研究しています。<br>
-                                    また、予定していた大学院進学を急遽取り消し、就職活動を行っています。
-                                </p>
-                            </div>
+                        <div class="col-8 career-right">
+                            <p class="career-title">研究 & 就職活動</p>
+                            <p class="career-description">
+                                社会集団の協力行動を進化ゲーム理論を用いて研究しています。<br>
+                                また、予定していた大学院進学を急遽取り消し、就職活動を行っています。
+                            </p>
                         </div>
                     </div>
                 </div>

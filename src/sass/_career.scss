@@ -22,9 +22,6 @@
             }
         }
     }
-    &-body .col-8 {
-        padding-left: 0;
-    }
     &-left {
         color: #333;
         padding: #{map-get($spaces, 'xl')} #{map-get($spaces, '8l')};
@@ -33,7 +30,7 @@
         font-size: #{map-get($font-size, 'xl')};
         @include sm() {
             font-size: #{map-get($font-size, 'default')};
-            padding: #{map-get($spaces, 'xl')} 0;
+            padding: #{map-get($spaces, 'xl')} #{map-get($spaces, 'm')} #{map-get($spaces, 'xl')} 0;
         }
     }
     &-right {
