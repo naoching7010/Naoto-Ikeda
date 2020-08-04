@@ -1,5 +1,6 @@
 <?php 
     $nav = array();
+    $title = 'お問い合わせ受付完了';
     require('header.php');
 ?>
     <main id="main">

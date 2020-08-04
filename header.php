@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naoto Ikeda</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Naoto Ikeda | <?php echo $title ?></title>
+    <meta name="description" content="ホームページ制作・システム開発を承っています。ホームページ制作・システム開発でお悩みの方はお気軽にお問い合わせください。" />
+    <meta property="og:title" content="Naoto Ikeda | <?php echo $title ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="ホームページ制作・システム開発を承っています。ホームページ制作・システム開発でお悩みの方はお気軽にお問い合わせください。" />
+    <meta property="og:url" content="https://portfolio-nao.com/" />
+    <meta property="og:image" content="./image/site-img.png" />
+    <meta property="og:site_name" content="Naoto Ikeda" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@naooooo7010" />
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/fontawesome-free-5.11.2-web/css/all.min.css">
     <link rel="stylesheet" href="./dist/css/app.css">
-
 </head>
 <body>
     <header id="header">

@@ -1,5 +1,6 @@
 <?php
     $nav = ['hobby', 'career', 'points', 'vision', 'contact'];
+    $title = '私について';
     require('header.php');
 ?>
     <main id="main">

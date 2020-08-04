@@ -84,6 +84,7 @@ EOT;
 ?>
 <?php
     $nav = ['about', 'skills', 'works', 'services', 'contact'];
+    $title = 'ホーム';
     require('header.php');
 ?>
     <main id="main">
