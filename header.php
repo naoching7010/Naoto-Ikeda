@@ -22,7 +22,7 @@
 <body>
     <header id="header">
         <div class="site-width">
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-between align-items-center m-0">
                 <a class="header-" href="./index.php">
                     <h1 class="header-title">
                         Naoto Ikeda<br>
