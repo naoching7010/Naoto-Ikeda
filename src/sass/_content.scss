@@ -555,11 +555,14 @@ $circle_size_md: 160px;
     }
 }
 .hobby {
-    &-left {
+    &-right {
         position: relative;
         @include sm() {
             margin-bottom: #{map-get($spaces, 'xl')};
         }
+    }
+    &-text {
+        margin-bottom: #{map-get($spaces, 'l')};
     }
     &-slider {
         overflow: hidden;
@@ -621,7 +624,7 @@ $circle_size_md: 160px;
         font-weight: bold;
         font-size: #{map-get($font-size, 'xl')};
         @include sm() {
-            font-size: #{map-get($font-size, 'm')};
+            font-size: #{map-get($font-size, 'default')};
             padding: #{map-get($spaces, 'xl')} 0;
         }
     }
@@ -630,7 +633,7 @@ $circle_size_md: 160px;
         padding: #{map-get($spaces, 'xl')} #{map-get($spaces, '8l')};
         position: relative;
         @include sm() {
-            padding: #{map-get($spaces, 'xl')} #{map-get($spaces, 'l')};
+            padding: #{map-get($spaces, 'xl')} #{map-get($spaces, 'm')};
         }
         &::before {
             content: "";

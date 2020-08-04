@@ -8110,11 +8110,14 @@ input:focus, textarea:focus, button:focus, select:focus {
 .contact-form-err {
   color: #ff6f6f; }
 
-.hobby-left {
+.hobby-right {
   position: relative; }
   @media screen and (max-width: 414px) {
-    .hobby-left {
+    .hobby-right {
       margin-bottom: 20px; } }
+
+.hobby-text {
+  margin-bottom: 15px; }
 
 .hobby-slider {
   overflow: hidden;
@@ -8166,7 +8169,7 @@ input:focus, textarea:focus, button:focus, select:focus {
   font-size: 22px; }
   @media screen and (max-width: 414px) {
     .career-left {
-      font-size: 14px;
+      font-size: 16px;
       padding: 20px 0; } }
 
 .career-right {
@@ -8175,7 +8178,7 @@ input:focus, textarea:focus, button:focus, select:focus {
   position: relative; }
   @media screen and (max-width: 414px) {
     .career-right {
-      padding: 20px 15px; } }
+      padding: 20px 10px; } }
   .career-right::before {
     content: "";
     position: absolute;
