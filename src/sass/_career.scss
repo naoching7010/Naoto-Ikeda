@@ -38,7 +38,7 @@
         padding: #{map-get($spaces, 'xl')} #{map-get($spaces, '8l')};
         position: relative;
         @include sm() {
-            padding: #{map-get($spaces, 'xl')} #{map-get($spaces, 'm')};
+            padding: #{map-get($spaces, 'xl')} 0 #{map-get($spaces, 'xl')} #{map-get($spaces, 'm')};
         }
         &::before {
             content: "";
