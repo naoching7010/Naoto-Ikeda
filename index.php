@@ -15,11 +15,19 @@
         $content = $_POST['content'];
 
         validRequired($name, 'name');
+        if(empty($err_msg['name'])) {
+            validMaxLen($name, 'name', 30);
+        }
+
         validRequired($email, 'email');
         if(empty($err_msg['email'])) {
             validEmail($email, 'email');
         }
+
         validRequired($content, 'content');
+        if(empty($err_msg['content'])) {
+            validMaxLen($content, 'content', 500);
+        }
 
         if(empty($err_msg)) {
 
@@ -379,15 +387,15 @@ EOT;
                     <form action="" method="post" class="contact-form">
                         <input type="hidden" name="token" value="<?php echo h($token); ?>">
                         <div class="contact-form-group">
-                            <input type="text" name="name" class="contact-form-input <?php if(!empty($err_msg['name'])) echo 'contact-form-input-err' ?>" placeholder="お名前">
+                            <input type="text" name="name" class="contact-form-input <?php if(!empty($err_msg['name'])) echo 'contact-form-input-err'; ?>" value="<?php if(!empty($_POST['name'])) echo h($_POST['name']);?>" placeholder="お名前">
                             <span class="contact-form-err"><?php if(!empty($err_msg['name'])) echo $err_msg['name'] ?></span>
                         </div>
                         <div class="contact-form-group">
-                            <input type="text" name="email" class="contact-form-input <?php if(!empty($err_msg['email'])) echo 'contact-form-input-err' ?>" placeholder="メールアドレス">
+                            <input type="text" name="email" class="contact-form-input <?php if(!empty($err_msg['email'])) echo 'contact-form-input-err'; ?>" value="<?php if(!empty($_POST['email'])) echo h($_POST['email']);?>" placeholder="メールアドレス">
                             <span class="contact-form-err"><?php if(!empty($err_msg['email'])) echo $err_msg['email'] ?></span>
                         </div>
                         <div class="contact-form-group">
-                            <textarea name="content" class="contact-form-textarea <?php if(!empty($err_msg['content'])) echo 'contact-form-textarea-err' ?>" placeholder="内容"></textarea>
+                            <textarea name="content" class="contact-form-textarea <?php if(!empty($err_msg['content'])) echo 'contact-form-textarea-err'; ?>" placeholder="内容"><?php if(!empty($_POST['content'])) echo h($_POST['content']);?></textarea>
                             <span class="contact-form-err"><?php if(!empty($err_msg['content'])) echo $err_msg['content'] ?></span>
                         </div>
                         <div class="btn-group btn-group-center">
